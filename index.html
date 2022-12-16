@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+
+    <div class="invalidscreen" id="notif" style="display: none;"> 
+            Password must contain at least 8 characters
+        <br>
+            Password must contain at least one number
+        <br>
+            Password must contain at least one uppercase letter
+        <br>
+            Password must contain at least one lowercase letter
+        <br>
+            Password must contain at least one special character
+        <br>
+            Passwords must match   
+        <br>
+            <button id="invalidscreen-btn" onclick="closeNotif()">OK</button>
+    </div>
+
+
+
+    <img class="japanimg" src="/img/closeup-photo-of-red-and-black-lighted-signage-iphone-x.jpg" alt="japanese sign">
+
+    <div class="content" id="content" style="filter: ;">
+
+        <div class="conent-top">
+            <h1>Sign up</h1>
+            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
+                Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+
+        <div class="content-mid">
+            <form action="index.html" method="post">
+                <input type="text" name="first-name" placeholder="First Name" id="first-name" minlength="3" required>
+                <input type="text" name="last-name" placeholder="Last Name" id="last-name" minlength="3" required>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <input type="tel" name="phone" placeholder="Phone" id="phone" minlength="9" required>
+                <input type="password" name="password" placeholder="Password (strong passwprd required)" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="poopoo" required>
+                
+                <input type="password" name="password" placeholder="Confirm Password" id="confirm-password" required>
+            
+        </div>
+
+        <div class="content-bottom">
+            <input type="submit" value="Create Account" id="sign-up-btn" onclick="validChecker()">
+            </form>
+            <h5>Already have an account? <a href="#">Sign in</a></h5>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

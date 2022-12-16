@@ -1,0 +1,113 @@
+:root { 
+    font-family: sans-serif;
+}
+
+
+.invalidscreen{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+#invalidscreen-btn { 
+    background: none;
+
+    width: auto;
+	color: inherit;
+	border: none;
+	padding: em;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    box-shadow: 0 0 9px 2px #dd1f81; 
+    margin-left: 0.7em;
+}
+
+#invalidscreen-btn:hover { 
+    background-color: #dd1f81;
+    color: white;
+}
+
+
+body { 
+    display: flex;
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+.japanimg { 
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    box-shadow: 0 0 50px 5px #48abe0;
+    margin-right: 3em;
+  
+}
+
+.content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.conent-top{
+    width: 95%;
+}
+
+
+
+input { 
+    width: 40%;
+    padding: 1em;
+    margin: 1em;
+    
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #48abe0;
+}
+
+input:focus { 
+    outline: none;
+    border: 1px solid #48abe0;
+}
+
+input:valid { 
+    border: 1px solid #dd1f81;
+}
+
+#sign-up-btn { 
+	background: none;
+
+    width: auto;
+	color: inherit;
+	border: none;
+	padding: em;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    box-shadow: 0 0 9px 2px #dd1f81; 
+    margin-left: 0.7em;
+}
+
+#sign-up-btn:hover{
+    background-color: #dd1f81;
+    color: white;
+}
+
+
+p {
+    padding: 0.4em;
+    font-size: 1.5em;
+}
+h1 { 
+    padding: 0.3em;
+    margin: 0;
+}
+h5 { 
+    padding: 1em;
+    margin-top: 0em;
+}
